@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/profile_screen.dart';
+import 'screens/onboarding/onboarding_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,8 +30,9 @@ class MyApp extends StatelessWidget {
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      home: const ProfileScreen(),
+      home: const OnboardingScreen(),
     );
   }
 }
